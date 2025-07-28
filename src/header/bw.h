@@ -11,7 +11,8 @@ unsigned char extractNibble (unsigned char, int);
 //To toggle a bit in a position
 unsigned char toggleBit_uint8 (unsigned char, int);
 
-
+//To check if the K-th bit is set
+unsigned char isKthBitSet (int, int);
 
 
 #endif

@@ -21,3 +21,9 @@ unsigned char extractNibble_uint8 (unsigned char reg, int pos){
 unsigned char toggleBit_uint8 (unsigned char reg, int pos){
     return ( reg ^ (1U << pos) );
 }
+
+unsigned char isKthBitSet(int reg, int pos){
+    if (reg & (1 << pos))
+        return 1;
+    return 0;
+}
