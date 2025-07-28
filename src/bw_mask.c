@@ -27,3 +27,13 @@ unsigned char isKthBitSet(int reg, int pos){
         return 1;
     return 0;
 }
+
+unsigned int countSetBits (unsigned int reg){
+    int i;
+    int count = 0;
+    while (n){
+        count += reg & 1;
+        reg >> 1;
+    }
+    return count;
+} 

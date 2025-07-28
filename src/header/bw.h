@@ -14,5 +14,7 @@ unsigned char toggleBit_uint8 (unsigned char, int);
 //To check if the K-th bit is set
 unsigned char isKthBitSet (int, int);
 
+//To count the number of set bits in a register
+unsigned int countSetBits (unsigned int);
 
 #endif
