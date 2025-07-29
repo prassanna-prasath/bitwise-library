@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <stdbool.h>
 #include "header/bw.h"
 
 
@@ -31,9 +32,13 @@ unsigned char isKthBitSet(int reg, int pos){
 unsigned int countSetBits (unsigned int reg){
     int i;
     int count = 0;
-    while (n){
+    while (reg){
         count += reg & 1;
         reg >> 1;
     }
     return count;
-} 
+}
+
+uint8_t set_bit_uint8 (uint8_t reg, uint8_t pos){
+    return (reg | (1 << pos));
+}
