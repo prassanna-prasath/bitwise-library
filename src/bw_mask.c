@@ -42,3 +42,7 @@ unsigned int countSetBits (unsigned int reg){
 uint8_t set_bit_uint8 (uint8_t reg, uint8_t pos){
     return (reg | (1 << pos));
 }
+
+uint8_t clear_bit_uint8 (uint8_t reg, uint8_t pos){
+    return (reg & ~(1 << pos));
+}

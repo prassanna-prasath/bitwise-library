@@ -19,4 +19,7 @@ unsigned int countSetBits (unsigned int);
 
 //To set a bit in an 8-bit register
 uint8_t set_bit_uint8 (uint8_t, uint8_t);
+
+//To clear a bit in an 8-bit register
+uint8_t clear_bit_uint8 (uint8_t, uint8_t);
 #endif
